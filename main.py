@@ -20,7 +20,6 @@ def Decode(key, enc):
         dec.append(dec_c)
     return "".join(dec)
 
-
 window = tkinter.Tk()
 window.title("SecretNotes")
 window.config(padx=30, pady=30)
@@ -95,8 +94,6 @@ def decrypted():
 
         except:
             messagebox.showerror(title="Error!", message="Please enter encrypted text ")
-
-
 
 save_encrypt = tkinter.Button(text="Save & Encrypt", command=save_text_and_encrypt)
 save_encrypt.pack()
